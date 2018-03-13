@@ -4,8 +4,8 @@ import string
 
 HOST = 'smtp.163.com'
 SUBJECT = '节日祝福'
-TO = '17751756461@163.com'
-FROM = '17751756461@163.com'
+TO = '177@163.com'
+FROM = '177@163.com'
 # TEXT = '测试节日祝福正文'
 # TEXT = 'test'
 #读取预置的祝福语
@@ -30,7 +30,7 @@ def send_mail(TEXT):
     server.connect(HOST, "25")
     #不启用TTLS加密
     #server.starttls()
-    server.login(FROM, 'Athena2003')
+    server.login(FROM, '2003')
     server.sendmail(FROM, [TO], BODY)
     server.quit()
     #print(BODY)
