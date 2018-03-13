@@ -1,0 +1,48 @@
+
+  [
+    {
+      "date": "0101",
+      "festival": "元旦",
+      "send": "yes"
+    },
+    {
+      "date": "0214",
+      "festival": "情人节",
+      "send": "yes"
+    },
+    {
+      "date": "0307",
+      "festival": "女神节",
+      "send": "yes"
+    },
+    {
+      "date": "0308",
+      "festival": "妇女节",
+      "send": "yes"
+    },
+    {
+      "date": "0312",
+      "festival": "植树节",
+      "send": "no"
+    },
+     {
+      "date": "0313",
+      "festival": "屡次面试被拒节",
+      "send": "yes"
+    },
+     {
+      "date": "0315",
+      "festival": "消费者节",
+      "send": "no"
+    },
+         {
+      "date": "0321",
+      "festival": "春分",
+      "send": "no"
+    },
+         {
+      "date": "0501",
+      "festival": "劳动节",
+      "send": "yes"
+    }
+  ]
