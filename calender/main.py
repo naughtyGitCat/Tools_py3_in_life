@@ -1,10 +1,17 @@
-import time
+import time,json
 from calender import getDate2list,json_context
 from send_mail import send_mail
 
 
+def getName():
+    with open('mail.json','rt',encoding='utf-8') as open_file:
+        CONTEXT = open_file.read()
+    NAME = json.loads(CONTEXT)['NAME']
+    return NAME
+NAME = getName()
 
-while True:
+
+try:
     # 取日期的月日
     now_time = time.localtime()
     today_date = time.strftime('%m%d',time.localtime())
@@ -29,9 +36,12 @@ while True:
                     print('今天的节日：',fest)
                 else:
                     print('将通过邮件发送祝福')
-                    send_mail('亲爱的xx：\n'+'今天是'+fest+'\n 祝你节日快乐')
-                    break
+                    send_mail('亲爱的{}：\n'.format(NAME)+'今天是'+fest+'\n节日快乐')
+                    raise Exception
 
     else:
         print('今天不在节日日期中')
+
+except Exception:
+    print('已经发送，停止主程序')
 
