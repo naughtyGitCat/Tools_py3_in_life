@@ -30,6 +30,7 @@ while True:
                 else:
                     print('将通过邮件发送祝福')
                     send_mail('亲爱的xx：\n'+'今天是'+fest+'\n 祝你节日快乐')
+                    break
 
     else:
         print('今天不在节日日期中')
